@@ -36,7 +36,6 @@ describe('Check date of today', () => {
 
     it('Checks default shown day is todays day', () => {
         const day_text = wrapper.find('.container .date h1').text();
-        console.log(day_text)
         let todays_day = today_date.getDate();
         todays_day = todays_day < 10 ?  `0${todays_day}` : todays_day.toString()
         expect(day_text).toEqual(todays_day);
